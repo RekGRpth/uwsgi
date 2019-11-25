@@ -133,7 +133,7 @@ static void uwsgi_cgi_apps() {
 		}
 		udd = udd->next;
 	}
-
+    uwsgi_apps_cnt++;
 }
 
 static int uwsgi_cgi_init(){
