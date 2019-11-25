@@ -13,7 +13,7 @@ extra_started_commands='reload stats'
 description_reload='Gracefully reload all the workers and the master process'
 description_stats='Dump uWSGI statistics to log file'
 
-command='/usr/sbin/uwsgi'
+command='/usr/local/sbin/uwsgi'
 command_args="--die-on-term ${uwsgi_opts:-}"
 command_background='yes'
 start_stop_daemon_args="--quiet --wait $wait"
