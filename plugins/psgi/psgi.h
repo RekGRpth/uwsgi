@@ -4,6 +4,9 @@
 #ifdef __APPLE__
 #define HAS_BOOL 1
 #endif
+#ifndef _GNU_SOURCE
+#define _GNU_SOURCE 1
+#endif
 #include <EXTERN.h>
 #include <perl.h>
 #include "XSUB.h"
